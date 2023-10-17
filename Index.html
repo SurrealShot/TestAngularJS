@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/Styling.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js" integrity="sha512-fVCjT4t8Rpwq8H9CRtGl2KJGwJZXJJJ5vamhkpcT8UmW+Oe0ZNC2ACO8/virYei0FynS5nbliWfCPVV4NkBrJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="javaScript/main.js"></script>
+    </head>
+    <body ng-app="app">
+        <div my-header ></div>
+        <div ng-controller="main">
+            <div checkout ng-if="page ==1"></div>
+            <div basket ng-if="page == 2"></div>
+            <div vending ng-if="page == 3"></div>
+        </div>
+    </body>
+</html>

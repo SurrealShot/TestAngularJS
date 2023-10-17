@@ -1,0 +1,30 @@
+<div class="basket-card">
+    <div class="basket-title">Order summary</div>
+    <hr>
+    <div ng-repeat="item in cart">
+        <div class="basket-item-details">
+            <div class="basket-item-left">
+                <img src="{{item.img}}" class="basket-item-img"/>
+                {{item.amount}} X {{item.name}}  
+            </div>
+            £{{item.price | number : 2}}
+        </div>
+        <hr>
+    </div>
+    <div class="basket-info">
+        <div class="basket-discount">
+            Discounts -£0.50
+        </div >
+        <div class="basket-price">
+            Total £{{totalPrice() | number : 2}}
+        </div>
+    </div>
+</div>
+<div class="basket-nav-btns">
+    <button class="nav-btn btn-white" ng-click ="changePage(1);">
+        Continue Shopping
+    </button>
+    <button class="nav-btn" ng-click ="changePage(3);">
+        Pay & Collect
+    </button>
+</div>

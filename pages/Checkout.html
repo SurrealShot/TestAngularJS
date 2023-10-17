@@ -1,0 +1,35 @@
+<div class="checkout-body">
+    <div class = "checkout-cards">
+        <div ng-repeat="product in products" class = "checkout-card">
+            <div class="checkout-cardcontent">
+                <div class="checkout-cardimg">
+                    <img src="{{product.img}}" class="checkout-cardimg">
+                    <div class="checkout-nostock" ng-if = "product.stock == 0">
+                        Out of Stock, sorry!
+                    </div>
+                </div>
+                <div class="checkout-cardname">
+                    {{product.name}}
+                </div>
+                <div class="checkout-cardbottom">
+                    <div class="checkout-cardprice">
+                        £{{product.price | number : 2}}
+                    </div>
+                    <button class="checkout-cardaddbtn" ng-class="{'btn-grey': product.stock == 0}" ng-if="!product.amount || product.amount == 0" ng-click ="prodAmountChange(product.id,1);">
+                        <img src="img/cart.png" class="checkout-cart">
+                        Add
+                    </button>
+                    <div class = "checkout-amount" ng-if="product.amount && product.amount != 0">
+                        <button class = "checkout-amountbtn" ng-click ="prodAmountChange(product.id,-1);"><img class = "checkout-amountbtnsign" src="img/minus.svg"></button>
+                        {{product.amount}}
+                        <button class = "checkout-amountbtn" ng-class="{'btn-grey': product.amount >= product.stock}" ng-click ="prodAmountChange(product.id,1);"><img class = "checkout-amountbtnsign" src="img/plus.svg"></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <button class = "nav-btn" ng-class="{'btn-grey': selected == 0}" ng-click ="checkout();">
+        Go to Checkout
+    </button>
+</div>

@@ -1,0 +1,21 @@
+<div class="vending-body">
+    <div class="vending-text1">
+        Success
+    </div>
+    <div class="vending-products">
+        <div ng-repeat="item in cart" class="vending-product">
+            <img src="{{item.img}}" class="vending-productimg">
+            <div class="vending-productamount">{{item.amount}}</div>
+        </div>
+    </div>
+    <div class="vending-text2">
+        We would love your feedback
+    </div>
+    <div class="vending-rating" ng-mouseleave="setHover(rating)">
+        <img class="vending-star" ng-repeat="i in [1,2,3,4,5]" ng-mouseenter ="setHover(i)" ng-click="setRating(i)" ng-class="{'vending-starfill': rating > i-1,'vending-starhover': hover > i-1 && rating < i|| hover < i && rating >= i}">
+    </div>
+    <div class="vending-text3">
+        Please collect your purchase
+    </div>
+    <img src="img/fridge.jpg" class="vending-img">
+</div>

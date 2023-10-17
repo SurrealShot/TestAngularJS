@@ -1,0 +1,343 @@
+body{
+    margin: 0;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+}
+hr{
+    border: 1px solid #B6B6B6;
+    color: #B6B6B6;
+    margin: 30px;
+}
+
+
+/*HEADER*/
+.header{
+    background-color: #f3f3f0;
+    height: 220px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    height: inherit;
+    margin: auto;
+}
+
+/*CHECKOUT*/
+
+.checkout-body{
+    margin-top: 65px;
+    margin-inline: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.checkout-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 78px;
+    margin-bottom: 65px;
+    max-width: 800px;
+}
+.checkout-card{
+    box-shadow: 0px 4px 30px 0px #6C686833;
+    border-radius: 10px;
+    height: 443px;
+    width: 344px;
+}
+.checkout-cardcontent{
+    width: 267px;
+    height: 366.84px;
+    margin-top: 32.49px;
+    margin-left: 38px;
+}
+.checkout-cardimg{
+    position: relative;
+    height: 223px;
+    width: 266px;
+    background-color: #f3f3f0;
+}
+.checkout-nostock{
+    position: absolute;
+    top: 0;
+    background-color:#231F2059;
+    display: flex;
+    height: inherit;
+    width: inherit;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+.checkout-cardname{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.checkout-cardbottom{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-cardprice{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.checkout-cardaddbtn{
+    display: flex;
+    background: #231F20;
+    width: 165px;
+    height: 53px;
+    border-radius: 50px;
+    color: white;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.checkout-cart{
+    width: 35px;
+    height: 30px;
+}
+.checkout-amount{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    justify-content: space-between;
+}
+.checkout-amountbtnsign{
+    height: 46px;
+}
+.checkout-amountbtn{
+    display: flex;
+    border-radius: 5px;
+    height: 46px;
+    width: 46px;
+    color: white;
+    background-color: #231F20;
+    font-size: 50;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Basket*/
+.basket-card{
+    width: 915px;
+    min-height: 1080px;
+    border-radius: 35px;
+    background: #F3F2F0;
+    margin: 80px auto;
+}
+.basket-title{
+    padding-top: 50;
+    margin: 50;
+    color: #424242;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.basket-item-details{
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.basket-item-left{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.basket-item-img{
+    margin-right: 40;
+    height: 100px;
+    background: #8E8E8E;
+    width: 100px;
+}
+.basket-info{
+    white-space: nowrap;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0em;
+    margin: 440px 650px 0;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.basket-discount{
+    
+    font-size: 30px;
+    line-height: 35px;
+    text-align: right;
+    color: #EB320A;
+}
+.basket-price{
+    margin: 10px;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+}
+.basket-nav-btns{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+/*VENDING*/
+.vending-body{
+    display: flex;
+    background: #F3F2F0;
+    flex-direction: column;
+    align-items: center;
+}
+.vending-text1{
+    margin: 20px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.vending-products{
+    display: flex;
+    gap: 30px;
+
+}
+.vending-product{
+    position: relative;
+    padding: 40px;
+}
+.vending-productimg{
+    width: 110;
+    height: 85px;
+}
+.vending-productamount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px #9E9C9C40;
+}
+.vending-text2{
+    margin: 20px;
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.vending-rating{
+    display: flex;
+    gap: 35px;
+}
+.vending-star
+{
+    content:url("../img/star.svg");
+    width: 115px;
+}
+.vending-starfill{
+    content:url("../img/star-fill.svg");
+}
+.vending-starhover{
+    content:url("../img/star-hover.svg");
+}
+.vending-text3{
+    margin: 40px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.vending-img{
+    width: 270px;
+    height: 620px;
+    margin-bottom: 200px;
+}
+/*General Use*/
+.nav-btn{
+    font: Roboto;
+    font-weight: 700;
+    font-size: 35px;
+    background-color: #231f20;
+    color: white;
+    width: 400px;
+    height: 90px;
+    padding: 20px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+.btn-grey{
+    cursor: default;
+    background: #231F2080;
+    pointer-events: none;
+}
+.btn-white{
+    background: white;
+    color: black;
+    border-style: outset;
+}
