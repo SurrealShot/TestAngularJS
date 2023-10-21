@@ -4,7 +4,7 @@
     </div>
     <div class="vending-products">
         <div ng-repeat="item in cart" class="vending-product">
-            <img src="{{item.img}}" class="vending-productimg">
+            <img ng-src="{{item.img}}" class="vending-productimg">
             <div class="vending-productamount">{{item.amount}}</div>
         </div>
     </div>
